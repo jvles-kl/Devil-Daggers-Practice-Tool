@@ -81,7 +81,6 @@ do
     then cp $DD/scanner $DD/survival
     else wget --quiet -O $DD/scanner https://devildaggers.info/api/spawnsets/Scanner/file
       cp $DD/scanner $DD/survival
-      echo "now playing scanner"
     fi ;;
   s) echo "what spawnset would you like to search for?"
     read search
