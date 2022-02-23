@@ -3,7 +3,7 @@
 Devil Daggers Practice Tool is a command line tool that allows you to play and download different spawnsets for the game Devil Daggers
 
 It is designed as a Linux alternative to the download and import features in [Devil Daggers Survival Editor](https://github.com/NoahStolk/DevilDaggersSurvivalEditor) 
-
+![screenshot](https://cdn.discordapp.com/attachments/643540982154919966/945867763723939890/unknown.png)
 
 
 ## Installation
@@ -33,7 +33,19 @@ if your devil daggers install gets messed upp, clear your dd folder instide comm
 
 I am not responsible for anything that happens to your game, your account or you 
 
-
+## How it works
+  the script checks if you have the chosen spawnset downloaded, if yes it copies it to be the "survival" file 
+  if the spawnset is not downloaded, it will download it from devildaggers.info via wget and then copy it 
+  
+  this makes for a very smooth experience where the user doesn't have to deal with checking what is downloaded or not 
+  
+  the search function simply tries to download a spawnset from  devildaggers.info with the name you give it, for now there isn't a failure message so you need to make sure that you enter the correct name 
+  if it successfully downloads a spawnset it will copy it to the survival file so that it's playable 
+  if you search for the same spawnset that you have already downloaded once, the script will not download it again but simply use the already downloaded version 
+  this leads to smoother usage but can clutter your dd folder if you go crazy.
+  
+  
+  
 
 ## Contributing
 You are welcome to open Issues, pull requests or forking this repo as you see fit
